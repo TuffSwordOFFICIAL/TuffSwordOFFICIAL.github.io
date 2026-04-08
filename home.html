@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
 
+    body {
+      /* Fullscreen background */
+      background-image: url('background.png'); /* your uploaded image */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; /* THIS makes it fill the whole screen */
+      
+      /* Center content vertically and horizontally */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 6vw; /* scales with screen size */
+      text-shadow: 2px 2px 10px black;
+    }
+
+    p {
+      font-size: 2vw;
+      text-shadow: 1px 1px 8px black;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Welcome 😎</h1>
+    <p>You got in!</p>
+  </div>
+</body>
+</html>
