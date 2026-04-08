@@ -35,10 +35,51 @@
     }
   </style>
 </head>
-<body>
-  <div>
-    <h1>Welcome 😎</h1>
-    <p>You got in!</p>
+<div class="download-links">
+  <div class="column">
+    <a href="file1.zip" download>Download File 1</a>
+    <a href="file2.zip" download>Download File 2</a>
+    <a href="file3.zip" download>Download File 3</a>
   </div>
-</body>
+  <div class="column">
+    <a href="file4.zip" download>Download File 4</a>
+    <a href="file5.zip" download>Download File 5</a>
+    <a href="file6.zip" download>Download File 6</a>
+  </div>
+  <div class="column">
+    <a href="file7.zip" download>Download File 7</a>
+    <a href="file8.zip" download>Download File 8</a>
+    <a href="file9.zip" download>Download File 9</a>
+  </div>
+</div>
+
+<style>
+.download-links {
+  display: flex;
+  gap: 30px; /* space between columns */
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.download-links .column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* space between links */
+}
+
+.download-links a {
+  color: #39ff14; /* neon green */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #39ff14, 0 0 20px #39ff14;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+
+.download-links a:hover {
+  color: white;
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14;
+}
+</style>
 </html>
